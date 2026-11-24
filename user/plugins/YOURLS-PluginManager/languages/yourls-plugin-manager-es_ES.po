@@ -1,0 +1,642 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YOURLS Advanced Plugin Manager\n"
+"POT-Creation-Date: 2026-06-04\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: yourls__\n"
+"X-Poedit-SearchPath-0: plugin.php\n"
+
+#: inc/admin-page.php:565
+msgid "%d plugin(s) were installed before repository metadata tracking and may show \"No repository metadata\" until reinstalled/updated once via Advanced Plugin Manager."
+msgstr "%d plugin(es) se instalaron antes de que se implementara el seguimiento de metadatos del repositorio y pueden mostrar «Sin metadatos del repositorio» hasta que se reinstalen o actualicen una vez mediante Advanced Plugin Manager."
+
+#: inc/admin-page.php:557
+msgid "%d plugin(s) installed, %d active."
+msgstr "%d plugin(es) instalados, %d activos."
+
+#: inc/admin-page.php:571
+msgid "%d plugin(s) do not require repository association because they are installed by default."
+msgstr "%d plugin(es) no necesitan asociarse a un repositorio porque vienen instalados por defecto."
+
+#: inc/admin-page.php:662
+msgid "Actions"
+msgstr "Acciones"
+
+#: inc/admin-page.php:647 inc/admin-page.php:738
+msgid "Active"
+msgstr "Activo"
+
+#: inc/admin-page.php:646
+msgid "All"
+msgstr "Todos"
+
+#: inc/admin-page.php:651
+msgid "Abandoned"
+msgstr "Abandonado"
+
+#: inc/admin-page.php:103
+msgid "Plugin activated successfully."
+msgstr "El plugin se ha activado correctamente."
+
+#: inc/admin-page.php:758
+msgid "Activate"
+msgstr "Activar"
+
+#: inc/admin-page.php:799
+msgid "Are you sure you want to delete this plugin?"
+msgstr "¿Seguro que quieres eliminar este plugin?"
+
+#: inc/admin-page.php:785 inc/admin-page.php:787 inc/admin-page.php:831 inc/admin-page.php:841
+msgid "Associate repo"
+msgstr "Asociar repositorio"
+
+#: inc/admin-page.php:658
+msgid "Author"
+msgstr "Autor"
+
+#: inc/admin-page.php:577
+msgid "Update checks"
+msgstr "Comprobaciones de actualizaciones"
+
+#: inc/admin-page.php:293
+msgid "Bulk update completed: %d updated, %d failed."
+msgstr "Actualización masiva completada: %d actualizados, %d fallidos."
+
+#: inc/admin-page.php:484
+msgid "By default, GitHub allows 60 unauthenticated API requests per hour per IP; with a personal access token, this limit increases to 5,000 requests per hour."
+msgstr "De forma predeterminada, GitHub permite 60 solicitudes a la API por hora y por dirección IP sin autenticación; con un token de acceso personal, el límite aumenta a 5.000 solicitudes por hora."
+
+#: inc/admin-page.php:331
+msgid "Cannot verify repository (HTTP %d): %s"
+msgstr "No se puede verificar el repositorio (HTTP %d): %s"
+
+#: inc/admin-page.php:840
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: inc/admin-page.php:543
+msgid "Check updates now"
+msgstr "Comprobar actualizaciones ahora"
+
+#: inc/admin-page.php:777
+msgid "Check for updates"
+msgstr "Buscar actualizaciones"
+
+#: inc/admin-page.php:769
+msgid "Check"
+msgstr "Comprobar"
+
+#: inc/admin-page.php:655
+msgid "Plugin"
+msgstr "Plugin"
+
+#: inc/admin-page.php:783
+msgid "Change repo"
+msgstr "Cambiar repositorio"
+
+#: inc/admin-page.php:712
+msgid "Checked:"
+msgstr "Comprobado:"
+
+#: inc/admin-page.php:830
+msgid "Close"
+msgstr "Cerrar"
+
+#: inc/admin-page.php:487
+msgid "Create a new GitHub token"
+msgstr "Crear un nuevo token de GitHub"
+
+#: inc/admin-page.php:758
+msgid "Deactivate"
+msgstr "Desactivar"
+
+#: inc/admin-page.php:764
+msgid "Deactivating Advanced Plugin Manager will remove this admin page. You will need to reactivate it from the standard YOURLS plugins page. Continue?"
+msgstr "Al desactivar Advanced Plugin Manager se eliminará esta página de administración. Tendrás que volver a activarlo desde la página estándar de plugins de YOURLS. ¿Continuar?"
+
+#: inc/admin-page.php:795 inc/admin-page.php:797 inc/admin-page.php:799
+msgid "Delete"
+msgstr "Eliminar"
+
+#: inc/admin-page.php:497
+msgid "Delete Token"
+msgstr "Eliminar token"
+
+#: inc/admin-page.php:456
+msgid "Download and Install Plugin"
+msgstr "Descargar e instalar plugin"
+
+#: inc/installer.php:42
+msgid "Download failed."
+msgstr "Error al descargar."
+
+msgid "Download ZIP package"
+msgstr "Descargar paquete ZIP"
+
+#: inc/admin-page.php:49
+msgid "Automatic deletion is not possible because YOURLS cannot remove this plugin directory. Delete it manually on the server:"
+msgstr "No es posible eliminarlo automáticamente porque YOURLS no puede borrar el directorio de este plugin. Elimínalo manualmente en el servidor:"
+
+#: inc/repository-metadata.php:338
+msgid "New version available:"
+msgstr "Nueva versión disponible:"
+
+#: inc/admin-page.php:498
+msgid "Edit Token"
+msgstr "Editar token"
+
+#: inc/admin-page.php:652
+msgid "Errors"
+msgstr "Errores"
+
+#: inc/installer.php:53 inc/installer.php:318
+msgid "Extraction failed: unable to extract ZIP archive."
+msgstr "Error al extraer: no se ha podido extraer el archivo ZIP."
+
+#: inc/installer.php:60 inc/installer.php:300
+msgid "Extraction failed: unable to open ZIP archive."
+msgstr "Error al extraer: no se ha podido abrir el archivo ZIP."
+
+#: inc/installer.php:310
+msgid "Extraction failed: ZIP archive contains unsafe paths."
+msgstr "Error al extraer: el archivo ZIP contiene rutas no seguras."
+
+#: inc/admin-page.php:105
+msgid "Failed to activate plugin."
+msgstr "No se ha podido activar el plugin."
+
+#: inc/admin-page.php:118
+msgid "Failed to deactivate plugin."
+msgstr "No se ha podido desactivar el plugin."
+
+#: inc/admin-page.php:228
+msgid "Plugin deleted successfully."
+msgstr "El plugin se ha eliminado correctamente."
+
+#: inc/installer.php:115 inc/installer.php:140 inc/installer.php:415
+msgid "Failed to move extracted plugin directory."
+msgstr "No se ha podido mover el directorio del plugin extraído."
+
+#: inc/installer.php:110 inc/installer.php:135 inc/installer.php:403
+msgid "Failed to replace existing plugin directory."
+msgstr "No se ha podido reemplazar el directorio del plugin existente."
+
+#: inc/installer.php:281
+msgid "Failed to move the uploaded file into a temporary location."
+msgstr "No se ha podido mover el archivo subido a una ubicación temporal."
+
+#: inc/installer.php:293
+msgid "Failed to create a staging directory for extraction."
+msgstr "No se ha podido crear un directorio provisional para la extracción."
+
+#: inc/installer.php:25 inc/admin-page.php:147
+msgid "GitHub API request failed (HTTP %d): %s"
+msgstr "Error en la solicitud a la API de GitHub (HTTP %d): %s"
+
+#: inc/admin-page.php:482
+msgid "GitHub Personal Access Token (optional):"
+msgstr "Token de acceso personal de GitHub (opcional):"
+
+#: inc/admin-page.php:434 inc/admin-page.php:834
+msgid "GitHub Repository URL:"
+msgstr "URL del repositorio de GitHub:"
+
+#: inc/admin-page.php:530
+msgid "Settings"
+msgstr "Ajustes"
+
+#: inc/admin-page.php:193
+msgid "GitHub token deleted. You are now using unauthenticated API requests."
+msgstr "Token de GitHub eliminado. Ahora se utilizan solicitudes a la API sin autenticación."
+
+#: inc/admin-page.php:187
+msgid "GitHub token saved successfully."
+msgstr "Token de GitHub guardado correctamente."
+
+#: inc/admin-page.php:578
+msgid "GitHub update checks run only on demand when you use \"Check updates now\" or start a bulk update."
+msgstr "Las comprobaciones de actualizaciones de GitHub solo se ejecutan bajo demanda, cuando utilizas «Comprobar actualizaciones ahora» o inicias una actualización masiva."
+
+#: inc/admin-page.php:648 inc/admin-page.php:739
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: inc/admin-page.php:436
+msgid "Insert a public GitHub repository URL (owner/repo). When Branch and Release are empty, the plugin downloads the latest Release, falls back to the latest Tag, then falls back to the default branch."
+msgstr "Introduce la URL de un repositorio público de GitHub (propietario/repositorio). Si Rama y Versión de lanzamiento están vacíos, el plugin descarga la versión de lanzamiento más reciente; si no está disponible, utiliza la etiqueta más reciente y, por último, la rama predeterminada."
+
+#: inc/admin-page.php:835
+msgid "Insert a public GitHub repository URL (owner/repo). The plugin downloads the latest Release package, or falls back to the latest Tag when no Release is available."
+msgstr "Introduce la URL de un repositorio público de GitHub (propietario/repositorio). El plugin descarga el paquete de la versión de lanzamiento más reciente o, si no hay ninguna disponible, utiliza la etiqueta más reciente."
+
+#: inc/admin-page.php:683
+msgid "Installed by default"
+msgstr "Instalado por defecto"
+
+msgid "Latest package:"
+msgstr "Último paquete:"
+
+#: inc/admin-page.php:306
+msgid "Default plugins do not require repository association."
+msgstr "Los plugins predeterminados no necesitan asociarse a un repositorio."
+
+#: inc/admin-page.php:787 inc/admin-page.php:823
+msgid "Repository association not needed for default plugins."
+msgstr "No es necesario asociar un repositorio para los plugins predeterminados."
+
+#: inc/admin-page.php:824
+msgid "Times shown in this page follow your YOURLS timezone configuration, or server time if that configuration is unavailable."
+msgstr "Las horas que se muestran en esta página siguen la configuración de zona horaria de YOURLS o, si no está disponible, la hora del servidor."
+
+#: inc/admin-page.php:536
+msgid "Installed Plugins"
+msgstr "Plugins instalados"
+
+#: inc/admin-page.php:310 inc/installer.php:13
+msgid "Invalid GitHub URL."
+msgstr "URL de GitHub no válida."
+
+#: inc/admin-page.php:97 inc/admin-page.php:121 inc/admin-page.php:135 inc/admin-page.php:168 inc/admin-page.php:218 inc/admin-page.php:249 inc/admin-page.php:304
+msgid "Invalid plugin slug."
+msgstr "Identificador del plugin no válido."
+
+#: inc/admin-page.php:580
+msgid "Last manual check:"
+msgstr "Última comprobación manual:"
+
+#: inc/admin-page.php:660
+msgid "Last Updated"
+msgstr "Última actualización"
+
+#: inc/admin-page.php:539
+msgid "Manage"
+msgstr "Gestionar"
+
+#: inc/admin-page.php:413 inc/admin-page.php:684
+msgid "Never"
+msgstr "Nunca"
+
+#: inc/admin-page.php:139 inc/admin-page.php:253
+msgid "No GitHub repository metadata available for this plugin."
+msgstr "No hay metadatos del repositorio de GitHub disponibles para este plugin."
+
+#: inc/admin-page.php:650
+msgid "No metadata"
+msgstr "Sin metadatos"
+
+#: inc/admin-page.php:666
+msgid "No plugins match the selected filter."
+msgstr "Ningún plugin coincide con el filtro seleccionado."
+
+#: inc/admin-page.php:703
+msgid "No repository metadata"
+msgstr "Sin metadatos del repositorio"
+
+#: inc/installer.php:365
+msgid "No valid YOURLS plugin.php was found at the ZIP root or inside a single top-level directory."
+msgstr "No se ha encontrado ningún plugin.php válido de YOURLS en la raíz del ZIP ni dentro de un único directorio de nivel superior."
+
+#: inc/admin-page.php:488
+msgid "No scopes are required – you can leave all permissions unchecked."
+msgstr "No se necesitan permisos específicos: puedes dejar todas las casillas de permisos sin marcar."
+
+#: inc/admin-page.php:272
+msgid "No updates available right now."
+msgstr "No hay actualizaciones disponibles en este momento."
+
+#: inc/admin-page.php:413
+msgid "Not run yet"
+msgstr "Aún no se ha ejecutado"
+
+#: inc/admin-page.php:249 inc/installer.php:249 inc/installer.php:477
+msgid "No file was uploaded."
+msgstr "No se ha subido ningún archivo."
+
+#: inc/admin-page.php:228
+
+#: inc/admin-page.php:426
+msgid "Plugin install"
+msgstr "Instalación de plugins"
+
+#: inc/admin-page.php:821
+msgid "Notes"
+msgstr "Notas"
+
+#: inc/installer.php:193
+msgid "Plugin installed or updated successfully."
+msgstr "El plugin se ha instalado o actualizado correctamente."
+
+#: inc/admin-page.php:8
+msgid "Advanced Plugin Manager"
+msgstr "Advanced Plugin Manager"
+
+#: inc/admin-page.php:657
+msgid "Plugin Name"
+msgstr "Nombre del plugin"
+
+#: inc/installer.php:430 inc/installer.php:160
+msgid "plugin.php does not contain a valid YOURLS plugin header."
+msgstr "plugin.php no contiene una cabecera válida de plugin de YOURLS."
+
+#: inc/installer.php:425 inc/installer.php:153
+msgid "plugin.php not found in final plugin directory."
+msgstr "No se ha encontrado plugin.php en el directorio final del plugin."
+
+#: inc/admin-page.php:701
+msgid "Plugin abandoned (repository archived or moved)"
+msgstr "Plugin abandonado (repositorio archivado o trasladado)"
+
+#: inc/installer.php:447
+msgid "Plugin \"%s\" uploaded successfully. Activate it from the plugins list when you are ready."
+msgstr "El plugin «%s» se ha subido correctamente. Actívalo desde la lista de plugins cuando quieras."
+
+#: inc/installer.php:374
+msgid "Computed plugin slug \"%s\" contains invalid characters. Rename the ZIP or its top-level folder to use only letters, digits, dots, underscores or hyphens."
+msgstr "El identificador calculado del plugin «%s» contiene caracteres no válidos. Cambia el nombre del ZIP o de su carpeta de nivel superior para que solo utilice letras, números, puntos, guiones bajos o guiones."
+
+#: inc/admin-page.php:116
+msgid "Plugin deactivated successfully."
+msgstr "El plugin se ha desactivado correctamente."
+
+#: inc/admin-page.php:121
+msgid "Unknown plugin action."
+msgstr "Acción de plugin desconocida."
+
+#: inc/admin-page.php:464
+msgid "Or upload a plugin .zip file:"
+msgstr "O sube un archivo .zip de plugin:"
+
+#: inc/admin-page.php:466
+msgid "The ZIP must contain a valid plugin.php either at the root or inside a single top-level directory. The plugin will be installed but not activated."
+msgstr "El ZIP debe contener un archivo plugin.php válido, ya sea en la raíz o dentro de un único directorio de nivel superior. El plugin se instalará, pero no se activará."
+
+#: inc/admin-page.php:471
+msgid "Upload and Install"
+msgstr "Subir e instalar"
+
+#: inc/installer.php:260
+msgid "Upload was rejected (not a valid HTTP upload)."
+msgstr "Se ha rechazado la subida (no es una carga HTTP válida)."
+
+#: inc/installer.php:264
+msgid "Only .zip files are accepted."
+msgstr "Solo se aceptan archivos .zip."
+
+#: inc/installer.php:272
+msgid "YOURLS cannot write to %s. Adjust the directory permissions and try again."
+msgstr "YOURLS no puede escribir en %s. Ajusta los permisos del directorio e inténtalo de nuevo."
+
+#: inc/installer.php:471
+msgid "Uploaded file exceeds the upload_max_filesize value in php.ini."
+msgstr "El archivo subido supera el valor de upload_max_filesize de php.ini."
+
+#: inc/installer.php:473
+msgid "Uploaded file exceeds the form MAX_FILE_SIZE."
+msgstr "El archivo subido supera el valor MAX_FILE_SIZE del formulario."
+
+#: inc/installer.php:475
+msgid "The uploaded file was only partially received."
+msgstr "El archivo solo se ha recibido parcialmente."
+
+#: inc/installer.php:479
+msgid "PHP has no temporary directory available for uploads."
+msgstr "PHP no tiene ningún directorio temporal disponible para las subidas."
+
+#: inc/installer.php:481
+msgid "Failed to write the uploaded file to disk."
+msgstr "No se ha podido escribir el archivo subido en el disco."
+
+#: inc/installer.php:483
+msgid "A PHP extension stopped the upload."
+msgstr "Una extensión de PHP ha detenido la subida."
+
+#: inc/installer.php:485
+msgid "Unknown upload error."
+msgstr "Error de subida desconocido."
+
+#: inc/admin-page.php:440
+msgid "Repository URL"
+msgstr "URL del repositorio"
+
+#: inc/admin-page.php:444
+msgid "Branch (optional)"
+msgstr "Rama (opcional)"
+
+#: inc/admin-page.php:445
+msgid "main / master"
+msgstr "main / master"
+
+#: inc/admin-page.php:448
+msgid "Release version (optional)"
+msgstr "Versión de lanzamiento (opcional)"
+
+#: inc/admin-page.php:449
+msgid "latest"
+msgstr "latest"
+
+#: inc/admin-page.php:453
+msgid "When a Release version is set it takes priority. When only a Branch is set the source code at that branch is downloaded."
+msgstr "Si se especifica una versión de lanzamiento, esta tiene prioridad. Si solo se especifica una rama, se descarga el código fuente de esa rama."
+
+#: inc/admin-page.php:492
+msgid "Show / hide token"
+msgstr "Mostrar / ocultar token"
+
+
+#: inc/admin-page.php:795
+msgid "You cannot delete the Plugin Manager itself from its own UI."
+msgstr "No puedes eliminar el propio Plugin Manager desde su interfaz."
+
+#: inc/repository-metadata.php:831
+msgid "Repository has been moved or renamed; the plugin appears abandoned."
+msgstr "El repositorio se ha trasladado o renombrado; el plugin parece estar abandonado."
+
+#: inc/repository-metadata.php:339
+msgid "View details on GitHub"
+msgstr "Ver detalles en GitHub"
+
+msgid "Automatic installation is not possible because YOURLS cannot write to %s. Download the ZIP package below and extract it manually into that directory."
+msgstr "No es posible realizar la instalación automática porque YOURLS no puede escribir en %s. Descarga el paquete ZIP de abajo y extráelo manualmente en ese directorio."
+
+#: inc/admin-page.php:241
+msgid "Update check completed for %d plugin(s)."
+msgstr "Comprobación de actualizaciones completada para %d plugin(es)."
+
+#: inc/admin-page.php:177
+msgid "Update check completed for \"%s\"."
+msgstr "Comprobación de actualizaciones completada para «%s»."
+
+#: inc/admin-page.php:705
+msgid "Update check failed"
+msgstr "Error al comprobar las actualizaciones"
+
+#: inc/admin-page.php:677
+msgid "Updated recently"
+msgstr "Actualizado recientemente"
+
+#: inc/admin-page.php:659
+msgid "Version"
+msgstr "Versión"
+
+#: inc/admin-page.php:358
+msgid "YOURLS Advanced Plugin Manager"
+msgstr "YOURLS Advanced Plugin Manager"
+
+#: inc/installer.php:7 inc/installer.php:244
+msgid "ZIP extraction requires the PHP ZipArchive extension, which is not available on this server."
+msgstr "La extracción de archivos ZIP requiere la extensión PHP ZipArchive, que no está disponible en este servidor."
+
+#: inc/admin-page.php:521
+msgid "Based on the snippet shared by ozh in YOURLS issue #2339."
+msgstr "Basado en el fragmento compartido por ozh en el issue #2339 de YOURLS."
+
+#: inc/admin-page.php:205
+msgid "Custom links-per-page value removed. YOURLS default is now active."
+msgstr "Se ha eliminado el valor personalizado de enlaces por página. Ahora está activo el valor predeterminado de YOURLS."
+
+#: inc/admin-page.php:208
+msgid "Custom links-per-page value saved."
+msgstr "Valor personalizado de enlaces por página guardado."
+
+#: inc/admin-page.php:509
+msgid "Leave this field empty to use the YOURLS default value."
+msgstr "Deja este campo vacío para utilizar el valor predeterminado de YOURLS."
+
+#: inc/admin-page.php:508
+msgid "Links displayed per page in YOURLS admin:"
+msgstr "Enlaces mostrados por página en la administración de YOURLS:"
+
+#: inc/admin-page.php:210
+msgid "Links-per-page must be an integer between 1 and 999."
+msgstr "El número de enlaces por página debe ser un número entero entre 1 y 999."
+
+#: inc/admin-page.php:513
+msgid "The plugin \"Custom number of displayed links\" appears to be installed. You can deactivate and delete it, because this feature is now built into Advanced Plugin Manager."
+msgstr "Parece que el plugin «Custom number of displayed links» está instalado. Puedes desactivarlo y eliminarlo, ya que esta función ahora está integrada en Advanced Plugin Manager."
+
+#: inc/admin-page.php:550
+msgid "No updates currently available. Run \"Check updates now\" first."
+msgstr "No hay actualizaciones disponibles actualmente. Ejecuta primero «Comprobar actualizaciones ahora»."
+
+#: inc/admin-page.php:519
+msgid "Save links-per-page"
+msgstr "Guardar enlaces por página"
+
+#: inc/admin-page.php:548
+msgid "Update all available (%d)"
+msgstr "Actualizar todos los disponibles (%d)"
+
+#: inc/admin-page.php:516
+msgid "YOURLS default"
+msgstr "Valor predeterminado de YOURLS"
+
+#: inc/admin-page.php:350
+msgid "Repository"
+msgstr "Repositorio"
+
+#: inc/admin-page.php:350
+msgid "Repository associated successfully."
+msgstr "Repositorio asociado correctamente."
+
+#: inc/admin-page.php:325
+msgid "Repository associated successfully. No release/tag is available yet; update checks may fail until one is published."
+msgstr "Repositorio asociado correctamente. Todavía no hay ninguna versión de lanzamiento ni etiqueta disponible; las comprobaciones de actualizaciones pueden fallar hasta que se publique una."
+
+#: inc/admin-page.php:699
+msgid "Source code only (no GitHub release)"
+msgstr "Solo código fuente (sin versión de GitHub)"
+
+#: inc/repository-metadata.php:209
+msgid "Repository is archived; the plugin appears abandoned."
+msgstr "El repositorio está archivado; el plugin parece estar abandonado."
+
+#: inc/admin-page.php:695
+msgid "Update available"
+msgstr "Actualización disponible"
+
+#: inc/admin-page.php:549
+msgid "Update all available"
+msgstr "Actualizar todos los disponibles"
+
+#: inc/admin-page.php:751
+msgid "Update"
+msgstr "Actualizar"
+
+#: inc/admin-page.php:697
+msgid "Up to date"
+msgstr "Actualizado"
+
+#: inc/admin-page.php:649
+msgid "Updatable"
+msgstr "Se puede actualizar"
+
+#: inc/admin-page.php:619
+msgid "Unknown Author"
+msgstr "Autor desconocido"
+
+#: inc/admin-page.php:616
+msgid "Unknown Plugin"
+msgstr "Plugin desconocido"
+
+#: inc/admin-page.php:622
+msgid "Unknown Version"
+msgstr "Versión desconocida"
+
+msgid "%d installed, %d failed:"
+msgstr "%d instalados, %d fallidos:"
+
+msgid "%d plugin(s) installed successfully."
+msgstr "%d plugin(es) instalados correctamente."
+
+msgid "Back to top"
+msgstr "Volver arriba"
+
+msgid "Deselect all"
+msgstr "Deseleccionar todo"
+
+msgid "Install selected"
+msgstr "Instalar seleccionados"
+
+msgid "Installed"
+msgstr "Instalado"
+
+msgid "No plugins selected."
+msgstr "No se ha seleccionado ningún plugin."
+
+msgid "Recommended plugins"
+msgstr "Plugins recomendados"
+
+msgid "Select all"
+msgstr "Seleccionar todo"
+
+msgid "Save Token"
+msgstr "Guardar token"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "These plugins are designed to complement YOURLS Advanced Plugin Manager."
+msgstr "Estos plugins están diseñados para complementar YOURLS Advanced Plugin Manager."
+
+msgid "This plugin is active and cannot be deleted."
+msgstr "Este plugin está activo y no se puede eliminar."
+
+msgid "To generate a token, visit your GitHub account settings:"
+msgstr "Para generar un token, visita los ajustes de tu cuenta de GitHub:"
+
+msgid "Version: "
+msgstr "Versión: "
+
+msgid "Activate/Deactivate"
+msgstr "Activar/desactivar"
+
+msgid "Reinstall from source"
+msgstr "Reinstalar desde el código fuente"
+
+msgid "SSH / FTP manual installation guide"
+msgstr "Guía de instalación manual mediante SSH / FTP"

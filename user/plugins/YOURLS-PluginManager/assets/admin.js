@@ -1,0 +1,191 @@
+(function () {
+    'use strict';
+
+    function detectSleekyTheme() {
+        var meta = document.querySelector('meta[name="sleeky_theme"]');
+        if (!meta) {
+            return;
+        }
+        var value = (meta.getAttribute('content') || '').toLowerCase();
+        document.body.classList.add('ypm-sleeky-active');
+        if (value === 'dark') {
+            document.body.classList.add('ypm-sleeky-dark');
+        } else if (value === 'light') {
+            document.body.classList.add('ypm-sleeky-light');
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', detectSleekyTheme);
+    } else {
+        detectSleekyTheme();
+    }
+
+    window.toggleTokenVisibility = function toggleTokenVisibility() {
+        const field = document.getElementById('ypm_github_token');
+        if (!field) {
+            return false;
+        }
+        field.type = field.type === 'password' ? 'text' : 'password';
+        return false;
+    };
+
+    window.setMainDrawerPanel = function setMainDrawerPanel(panel) {
+        const drawer = document.getElementById('ypm-main-drawer');
+        const installTab = document.getElementById('ypm-main-drawer-toggle-install');
+        const tokenTab = document.getElementById('ypm-main-drawer-toggle-token');
+        if (!drawer || !installTab || !tokenTab) {
+            return false;
+        }
+
+        const isToken = panel === 'token';
+        drawer.classList.toggle('is-main-open', !isToken);
+        drawer.classList.toggle('is-token-open', isToken);
+        installTab.classList.toggle('is-active', !isToken);
+        tokenTab.classList.toggle('is-active', isToken);
+        installTab.setAttribute('aria-expanded', !isToken ? 'true' : 'false');
+        tokenTab.setAttribute('aria-expanded', isToken ? 'true' : 'false');
+        return false;
+    };
+
+    window.openAssociateRepoModal = function openAssociateRepoModal(slug, name, repoUrl) {
+        const modal = document.getElementById('ypm-associate-modal');
+        const slugField = document.getElementById('ypm-associate-plugin');
+        const nameField = document.getElementById('ypm-associate-plugin-name');
+        const urlField = document.getElementById('ypm-associate-repo-url');
+        if (!modal || !slugField || !nameField || !urlField) {
+            return false;
+        }
+
+        slugField.value = slug || '';
+        nameField.textContent = name || slug || '';
+        urlField.value = repoUrl || '';
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('ypm-modal-open');
+        setTimeout(function () {
+            urlField.focus();
+        }, 30);
+        return false;
+    };
+
+    window.closeAssociateRepoModal = function closeAssociateRepoModal() {
+        const modal = document.getElementById('ypm-associate-modal');
+        if (!modal) {
+            return false;
+        }
+
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('ypm-modal-open');
+        return false;
+    };
+
+    function syncMyPluginsSubmit() {
+        const form = document.getElementById('ypm-my-plugins-form');
+        if (!form) {
+            return;
+        }
+        const selectableBoxes = form.querySelectorAll('input[type="checkbox"]:not([disabled])');
+        const anyChecked = form.querySelector('input[type="checkbox"]:not([disabled]):checked') !== null;
+        const hasSelectable = selectableBoxes.length > 0;
+
+        const btn = form.querySelector('input[type="submit"][name="ypm_install_my_plugins"]');
+        if (btn) {
+            btn.disabled = !anyChecked;
+        }
+
+        const selectors = form.querySelector('.ypm-my-plugins-selectors');
+        if (selectors) {
+            selectors.classList.toggle('ypm-my-plugins-selectors-inactive', !hasSelectable);
+        }
+    }
+
+    function bindAdminEvents() {
+        document.addEventListener('click', function (event) {
+            const tokenToggle = event.target.closest('.ypm-token-visibility-toggle');
+            if (tokenToggle) {
+                event.preventDefault();
+                window.toggleTokenVisibility();
+                return;
+            }
+
+            const drawerToggle = event.target.closest('.ypm-drawer-panel-toggle');
+            if (drawerToggle) {
+                event.preventDefault();
+                window.setMainDrawerPanel(drawerToggle.getAttribute('data-panel') || 'main');
+                return;
+            }
+
+            const openAssociate = event.target.closest('.ypm-open-associate');
+            if (openAssociate) {
+                event.preventDefault();
+                window.openAssociateRepoModal(
+                    openAssociate.dataset.pluginSlug || '',
+                    openAssociate.dataset.pluginName || '',
+                    openAssociate.dataset.repoUrl || ''
+                );
+                return;
+            }
+
+            const closeModal = event.target.closest('.ypm-modal-close-action');
+            if (closeModal) {
+                event.preventDefault();
+                window.closeAssociateRepoModal();
+                return;
+            }
+
+            const selectAll = event.target.closest('.ypm-select-all');
+            if (selectAll) {
+                event.preventDefault();
+                const form = document.getElementById(selectAll.dataset.form || '');
+                if (form) {
+                    form.querySelectorAll('input[type="checkbox"]:not([disabled])').forEach(function (cb) { cb.checked = true; });
+                    syncMyPluginsSubmit();
+                }
+                return;
+            }
+
+            const deselectAll = event.target.closest('.ypm-deselect-all');
+            if (deselectAll) {
+                event.preventDefault();
+                const form = document.getElementById(deselectAll.dataset.form || '');
+                if (form) {
+                    form.querySelectorAll('input[type="checkbox"]:not([disabled])').forEach(function (cb) { cb.checked = false; });
+                    syncMyPluginsSubmit();
+                }
+                return;
+            }
+
+            const confirmTrigger = event.target.closest('.ypm-delete-confirm, .ypm-confirm');
+            if (confirmTrigger) {
+                const message = confirmTrigger.getAttribute('data-confirm-message') || '';
+                if (message !== '' && !window.confirm(message)) {
+                    event.preventDefault();
+                }
+            }
+        });
+    }
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            window.closeAssociateRepoModal();
+        }
+    });
+
+    document.addEventListener('change', function (event) {
+        if (event.target.closest('#ypm-my-plugins-form')) {
+            syncMyPluginsSubmit();
+        }
+    });
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+            bindAdminEvents();
+            syncMyPluginsSubmit();
+        });
+    } else {
+        bindAdminEvents();
+        syncMyPluginsSubmit();
+    }
+})();
